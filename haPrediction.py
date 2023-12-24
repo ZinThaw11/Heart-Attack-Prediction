@@ -60,7 +60,7 @@ with st.form("my_form1"):
 
                  X_train, X_test, y_train, y_test = train_test_split(x,y,test_size=0.2, random_state=25)
 
-                 model = "/Users/zinthaw/Desktop/DataScience/Projects/ML/heartAttack330/nb_model"
+                 model = "nb_model"
                  load_model = pickle.load(open(model, "rb"))
                  testsdata1 = pd.get_dummies(features)
                  testsdata2 = testsdata1.reindex(columns = X_train.columns.values, fill_value=0)

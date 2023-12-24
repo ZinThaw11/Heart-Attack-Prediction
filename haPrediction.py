@@ -1,6 +1,7 @@
-import pandas as pd
-import plotly.express as px
 import streamlit as st
+import pandas as pd
+import pickle
+from sklearn.model_selection import train_test_split
 
 df = pd.read_csv('heart.csv')
 with st.form("my_form1"):

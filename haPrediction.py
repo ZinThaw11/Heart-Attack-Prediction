@@ -1,17 +1,5 @@
 import pandas as pd
 import plotly.express as px
-import matplotlib.pyplot as plt
-from matplotlib import pyplot as plt
-import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix,accuracy_score,roc_curve,classification_report,precision_score
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn import metrics
-import xgboost as xgb
-from sklearn.preprocessing import OneHotEncoder
-import numpy as np
-import pickle
 import streamlit as st
 
 df = pd.read_csv('heart.csv')
